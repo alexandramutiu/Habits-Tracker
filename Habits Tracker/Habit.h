@@ -14,9 +14,9 @@ private:
 	bool completed;
 
 public:
-	Habit(string& n);
-	bool maskDone();
-	bool resetDaily();
+	Habit(const string& name);
+	void markDone();
+	void resetDaily();
 	void display() const;
 	string serialize() const;
 	static Habit deserialize(const string& line);
