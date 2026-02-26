@@ -14,7 +14,7 @@ private:
 	bool completed;
 
 public:
-	Habit(string& n){}
+	Habit(string& n);
 	bool maskDone();
 	bool resetDaily();
 	void display() const;
